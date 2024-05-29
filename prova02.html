@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova02</title>
+</head>
+<body>
+    <script>
+        let nome = prompt("Digite seu nome completo: ");
+        let peso = prompt('Informe seu peso (Kg): ');
+        peso = parseFloat(peso);
+        let altura_cm = prompt('Informe sua altura em (cm): ');
+        altura_cm = parseFloat(altura_cm);
+
+        let cal_altura = altura_cm / 100;
+        let altura = cal_altura;
+        calc_imc = peso / (altura **2);
+        imc = calc_imc; 
+        
+
+        if (imc < 16) {
+            console.log(`${nome} esta com IMC = ${imc.toFixed(2)}  — Baixo peso muito grave`)
+        }else if(imc <= 16.99){
+            console.log(`${nome} esta com IMC = ${imc.toFixed(2)}  — Baixo peso grave`)
+        }else if(imc <= 18.49){
+            console.log(`${nome} esta com IMC = ${imc.toFixed(2)}  — Baixo peso`)
+        }else if(imc <= 24.99){
+            console.log(`${nome} esta com IMC = ${imc.toFixed(2)}  — Peso normal`)
+        }else if(imc <= 29.99){
+            console.log(`${nome} esta com IMC = ${imc.toFixed(2)}  — sobrepeso`)
+        }else if(imc <= 34.99){
+            console.log(`${nome} esta com IMC = ${imc.toFixed(2)}  — Obesidade grau I`)
+        }else if(imc <= 39.99){
+            console.log(`${nome} esta com IMC = ${imc.toFixed(2)}  — Obesidade grau II`)
+        }else if(imc >= 40){
+            console.log(`${nome} esta com IMC = ${imc.toFixed(2)}  — Obesidade grau III`)
+        }else{
+            console.log("Valor invalido")
+        };
+        
+    </script>
+</body>
+</html>
+
