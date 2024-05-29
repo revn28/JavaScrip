@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova01</title>
+</head>
+<body>
+    <script>
+        let n1 = prompt("Digite a primeira nota: ")
+        n1 = parseFloat(n1);
+        let n2 = prompt("Digite a segunda nota: ")
+        n2 = parseFloat(n2);
+        let n3 = prompt("Digite a terceira nota: ")
+        n3 = parseFloat(n3);
+
+        const p1 = 1;
+        const p2 = 2;
+        const p3 = 3;
+
+        let cal_n1 = n1 * p1; 
+        let cal_n2 = n2 * p2;
+        let cal_n3 = n3 * p3;
+        
+        let soma_das_notas = cal_n1 + cal_n2 + cal_n3;
+        let divisor = p1 + p2 + p3;
+
+        let media = soma_das_notas / divisor;
+            
+        console.log(`Media: ${media.toFixed(2)}`);
+        // console.log(`Soma das notas: ${soma_das_notas}`);
+        // console.log(`Divisor: ${divisor}`);
+        // console.log(`N1: ${cal_n1}`);
+        // console.log(`N2: ${cal_n2}`);
+        // console.log(`N3: ${cal_n3}`);
+    </script>
+</body>
+</html>
+
+<!--Considere três notas (n1, n2, n3) e seus respectivos pesos (p1, p2, p3). 
+    Calcule a média ponderada das notas e atribua o resultado à variável "media". 
+    Após o cálculo, exiba a média ponderada no console.
+
+OBS: Para calcular a média ponderada multiplica os valores das notas pelos valores dos pesos, 
+e divide pelas somas de todos os pesos. Lembre-se de declarar valores para os pesos e para as notas. -->
