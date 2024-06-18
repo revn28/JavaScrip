@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="campo"/>
+        <input type="button" id="btn" onclick="clicar()"/>
+    </div>
+    <div>
+        Lista completa
+        <ul id="lista completa">
+            
+        </ul>
+        
+        <div> 
+            Lista de pares
+            <ul id="lista pares">
+
+        </ul>
+        </div>
+        <div>
+            Lista de impares
+            <ul id="lista impares"></ul>
+        </div>
+    </div>
+
+    <script>
+        
+        // const numeros = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+        const numeros = []
+        function clicar(){
+            let numero = document.getElementById('campo').value;
+            numero = parseInt(numero);
+            numeros.push(numero);
+            console.log(numeros);
+            
+            let lista = document.getElementById('lista completa')
+            let lista_pares = document.getElementById('lista pares')
+            let lista_impares = document.getElementById('lista impares')
+            
+            lista.innerHTML = '';
+            lista_pares.innerHTML = '';
+            lista_impares.innerHTML = '';
+           
+            for (let i = 0; i < numeros.length; i++){
+                lista.innerHTML += `<li>${numeros[i]}</li>`
+                if (numeros[i] % 2 == 0){
+                    lista_pares.innerHTML += `<li>${numeros[i]}</li>`
+            }else{
+                lista_impares.innerHTML += `<li>${numeros[i]}</li>`
+            }
+        }
+        }
+
+        //
+        </script>
+  
+
+
+
+</body>
+</html>

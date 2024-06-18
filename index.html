@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const frutas = ['Uva','Maçã','Goiaba'];
+        console.log(frutas);
+        console.log(frutas[0]);
+        console.log(frutas[2]);
+        
+        frutas[0] = 'tangerina'; // alterar elemento dentro de uma arrey
+
+        
+        frutas.push('Kiwi'); // adicionar elemento no final da arrey
+
+        let f = frutas.pop(); // remove o ultimo elemento da arrey
+        console.log(frutas)
+
+        frutas.unshift('melancia'); //adiciona elemento no inicio da arrey
+
+        frutas.splice(1,2, 'umbu','seriguela','caja'); //a função 'splice' (posição a ser trabalhada,excluir quant.elementos, elemento a ser adcionada)
+        //caso nao queira excluir nenhum elemento colocar '0' na segunda posição
+
+        console.log(frutas.length) //mostra a quant de elementos na arrey
+
+        console.log(frutas.indexOf('umbu')) // mostra a posição do elemento indicado
+        console.log(frutas.indexOf('manga')) // caso o elemento nao exista ele mostra '-1' no console
+
+        for (let fruta of frutas){ //'for' 'of' percorre a arrey mostrando todos os elementos
+            console.log(fruta)
+        }
+
+        for(let i = 0; i < frutas.length; i++){
+            console.log(frutas[1])
+        }
+
+    </script>
+</body>
+</html>
