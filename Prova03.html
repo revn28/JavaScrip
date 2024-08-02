@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova03</title>
+</head>
+<body>
+    <script>
+        let alunos = parseInt(prompt('Insira o número de alunos: '));
+        let quant = 0;
+        let notas = 0;
+        let maiorNota = -Infinity;
+        let menorNota = Infinity;
+        let alunoMaiorNota = '';
+        let alunoMenorNota = '';
+
+        while (quant < alunos) {  
+            let aluno = prompt('Nome do aluno: ');
+            let nota = parseFloat(prompt('Nota: '));
+            notas += nota;
+            quant++;
+
+            if (nota > maiorNota) {
+                maiorNota = nota;
+                alunoMaiorNota = aluno;
+            }
+
+            if (nota < menorNota) {
+                menorNota = nota;
+                alunoMenorNota = aluno;
+            }
+
+            console.log(`${aluno} nota: ${nota}.`);
+        }
+        
+        let media = notas / quant;
+        console.log(`Média: ${media}`);
+        console.log(`Maior nota: ${maiorNota} (${alunoMaiorNota})`);
+        console.log(`Menor nota: ${menorNota} (${alunoMenorNota})`);
+    </script>
+</body>
+</html>
