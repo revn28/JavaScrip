@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova04</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt('Digite um Valor: '));
+        
+        // Cálculo do fatorial
+        let fatorial = 1;
+        if (num >= 0) {
+            for (let i = num; i > 1; i--) {
+                fatorial *= i;
+            }
+            console.log(`O fatorial de ${num} é ${fatorial}`);
+        } else {
+            console.log('Número inválido para fatorial!');
+        }
+
+        // Cálculo da sequência de Fibonacci
+        if (num >= 0) {
+            let fibonacci = [0, 1];
+            for (let i = 2; i <= num; i++) {
+                fibonacci.push(fibonacci[i - 1] + fibonacci[i - 2]);
+            }
+            console.log(`A sequência de Fibonacci até o ${num}º termo é: ${fibonacci.slice(0, num + 1).join(', ')}`);
+        } else {
+            console.log('Número inválido para Fibonacci!');
+        }
+    </script>
+</body>
+</html>
