@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova06</title>
+</head>
+<body>
+    <div id="imc">
+       Altura (em metros): <input type="number" id="altura" step="0.01">  
+       Peso (em kg): <input type="number" id="peso" step="0.1"> 
+       <input type="button" value="Calcular" onclick="calcularIMC()">
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        const calcularIMC = () => {
+            let altura = Number(document.getElementById('altura').value);
+            let peso = Number(document.getElementById('peso').value);
+            
+            if (altura > 0 && peso > 0) {
+                let imc = peso / (altura * altura);
+                document.getElementById('resultado').textContent = `Seu IMC é: ${imc.toFixed(2)}`;
+            } else {
+                document.getElementById('resultado').textContent = 'Por favor, insira valores válidos para altura e peso.';
+            }
+        };
+    </script>
+</body>
+</html>
