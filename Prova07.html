@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova07</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+}
+
+.pizza-card img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.pizza-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.pizza-card img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+#pedido {
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#pedido-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#pedido-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#pedido-form input,
+#pedido-form select,
+#pedido-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#pedido-form button {
+    padding: 10px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#pedido-form button:hover {
+    background-color: #b71c1c;
+}
+
+#calculadora-gorjeta {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin-top: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#gorjeta-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#gorjeta-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#gorjeta-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#gorjeta-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#gorjeta-form button:hover {
+    background-color: #45a049;
+}
+
+#resultado {
+    margin-top: 20px;
+}
+
+#resultado p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#contato {
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto; 
+}
+
+#contato h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contato-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+.form-group textarea {
+    resize: vertical; 
+}
+
+#contato-form button {
+    padding: 10px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#contato-form button:hover {
+    background-color: #b71c1c;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Pizzaria do Netinho</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Nosso Menu</h2>
+        <div class="pizza-card">
+            <img src="https://s2-receitas.glbimg.com/wb7DIMyCpEyV07sTAtcDWD8HQjw=/0x0:1200x675/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/h/r/EfCbvqTbeDRAD3Lzc5xA/pizza-margherita.jpg" alt="Pizza Margherita">
+            <h3>Pizza Margherita</h3>
+            <p>Tomate, mussarela, manjericão.</p>
+            <p>R$ 35,00</p>
+        </div>
+        <div class="pizza-card">
+            <img src="https://cdn6.campograndenews.com.br/uploads/noticias/2022/03/04/3cb5530b66938475b217183a18974de301f5b0fd.jpg" alt="Pizza Calabresa">
+            <h3>Pizza Calabresa</h3>
+            <p>Tomate, mussarela, Calabresa.</p>
+            <p>R$ 30,00</p>
+        </div>
+        <div class="pizza-card">
+            <img src="https://www.receitasnestle.com.br/sites/default/files/srh_recipes/d036cd01122da62bf581784f52d99b3a.jpg" alt="Pizza 4 queiijos">
+            <h3>Pizza 4 queijos</h3>
+            <p>queijo gorgonzola, mussarela, provolone e parmesão.</p>
+            <p>R$ 35,00</p>
+        </div>
+        <!-- Adicione mais pizzas conforme necessário -->
+    </section>
+
+    <section id="pedido">
+        <h2>Faça seu Pedido</h2>
+        <form id="pedido-form">
+            <label for="pizza">Escolha sua Pizza:</label>
+            <select id="pizza" name="pizza" required>
+                <option value="margherita">Pizza Margherita</option>
+                <option value="pepperoni">Pizza Calabresa</option>
+                <option value="quatro-queijos">Pizza Quatro Queijos</option>
+                <!-- Adicione mais opções conforme necessário -->
+            </select>
+            
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" max="10" value="1" required>
+            
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            
+            <label for="endereco">Endereço de Entrega:</label>
+            <textarea id="endereco" name="endereco" required></textarea>
+            
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+
+    <section id="calculadora-gorjeta">
+        <h2>Calculadora de Gorjetas</h2>
+        <form id="gorjeta-form">
+            <label for="conta">Valor da Conta (R$):</label>
+            <input type="number" id="conta" name="conta" min="0" step="0.01" required>
+    
+            <label for="porcentagem">Porcentagem da Gorjeta (%):</label>
+            <input type="number" id="porcentagem" name="porcentagem" min="0" max="100" step="1" value="10" required>
+    
+            <label for="qualidade">Qualidade do Serviço:</label>
+            <select id="qualidade" name="qualidade" required>
+                <option value="bom">Bom</option>
+                <option value="regular">Regular</option>
+                <option value="ruim">Ruim</option>
+            </select>
+    
+            <button type="submit">Calcular Gorjeta</button>
+        </form>
+    
+        <div id="resultado">
+            <p>Gorjeta: R$ <span id="valor-gorjeta">0.00</span></p>
+            <p>Total a Pagar: R$ <span id="total-pagar">0.00</span></p>
+        </div>
+    </section>
+    
+    
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>A Netinho Pizzaria oferece as melhores pizzas feitas com ingredientes frescos e de alta qualidade.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form id="contato-form">
+            <div class="form-group">
+                <label for="nome-contato">Nome:</label>
+                <input type="text" id="nome-contato" name="nome-contato" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email-contato">Email:</label>
+                <input type="email" id="email-contato" name="email-contato" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="telefone-contato">Telefone:</label>
+                <input type="tel" id="telefone-contato" name="telefone-contato" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+    
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Netinho Pizzaria. Todos os direitos reservados.</p>
+    </footer>
+<!-- ======================================================================================================================== -->
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    
+    if (!name || !email || !message) {
+        alert('Por favor, preencha todos os campos.');
+        return;
+    }
+
+    if (!validateEmail(email)) {
+        alert('Por favor, insira um endereço de email válido.');
+        return;
+    }
+
+    
+    fetch('/enviar-mensagem', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            name: name,
+            email: email,
+            message: message
+        })
+    })
+    .then(response => {
+        if (response.ok) {
+            alert('Mensagem enviada com sucesso!');
+            clearForm();
+        } else {
+            throw new Error('Erro ao enviar a mensagem.');
+        }
+    })
+    .catch(error => {
+        alert('Houve um problema ao enviar sua mensagem. Tente novamente mais tarde.');
+        console.error('Erro:', error);
+    });
+});
+
+
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+
+function clearForm() {
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
+}
+
+
+document.getElementById('pedido-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    
+    const pizza = document.getElementById('pizza').value;
+    const quantidade = document.getElementById('quantidade').value;
+    const nome = document.getElementById('nome').value.trim();
+    const telefone = document.getElementById('telefone').value.trim();
+    const endereco = document.getElementById('endereco').value.trim();
+
+   
+    if (nome === "" || telefone === "" || endereco === "") {
+        alert('Por favor, preencha todos os campos.');
+        return;
+    }
+
+    
+    alert(`Pedido realizado com sucesso!\n\nPizza: ${pizza}\nQuantidade: ${quantidade}\nNome: ${nome}\nTelefone: ${telefone}\nEndereço: ${endereco}`);
+    
+    
+    document.getElementById('pedido-form').reset();
+});
+
+document.getElementById('gorjeta-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    
+    const conta = parseFloat(document.getElementById('conta').value);
+    const porcentagem = parseFloat(document.getElementById('porcentagem').value);
+    const qualidade = document.getElementById('qualidade').value;
+
+    
+    const calcularPorcentagemGorjeta = (qualidade) => {
+        const porcentagemBase = porcentagem; 
+        switch (qualidade) {
+            case 'bom':
+                return porcentagemBase + 3; 
+            case 'regular':
+                return porcentagemBase; 
+            case 'ruim':
+                return porcentagemBase - 3; 
+            default:
+                return porcentagemBase; 
+        }
+    };
+
+   
+    const calcularGorjetaETotal = (porcentagemGorjeta) => {
+        const valorGorjeta = (conta * porcentagemGorjeta) / 100;
+        const totalPagar = conta + valorGorjeta;
+        return { valorGorjeta, totalPagar };
+    };
+
+    
+    const porcentagemGorjeta = calcularPorcentagemGorjeta(qualidade);
+
+   
+    const { valorGorjeta, totalPagar } = calcularGorjetaETotal(porcentagemGorjeta);
+
+    
+    document.getElementById('valor-gorjeta').textContent = valorGorjeta.toFixed(2);
+    document.getElementById('total-pagar').textContent = totalPagar.toFixed(2);
+});
+
+
+    </script>
+
+</body>
+</html>
