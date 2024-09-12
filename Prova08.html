@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Medidas</title>
+    <link rel="stylesheet" href="Prova08.css">
+</head>
+<body>
+    <div id="div01">Conversor de Medidas</div>
+
+    <div id="converter">
+        <label for="inputValue">Valor a converter:</label>
+        <input type="number" id="inputValue" placeholder="Digite um valor">
+
+        <label for="opcoes1">De:</label>
+        <select id="opcoes1">
+            <option value="metros">Metros</option>
+            <option value="quilometros">Quilômetros</option>
+            <option value="milhas">Milhas</option>
+            <option value="jardas">Jardas</option>
+            <option value="pes">Pés</option>
+            <option value="polegadas">Polegadas</option>
+        </select>
+
+        <label for="opcoes2">Para:</label>
+        <select id="opcoes2">
+            <option value="metros">Metros</option>
+            <option value="quilometros">Quilômetros</option>
+            <option value="milhas">Milhas</option>
+            <option value="jardas">Jardas</option>
+            <option value="pes">Pés</option>
+            <option value="polegadas">Polegadas</option>
+        </select>
+
+        <button onclick="converter()">Converter</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="Prova08.js"></script>
+</body>
+</html>
