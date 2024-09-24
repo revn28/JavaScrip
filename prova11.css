@@ -1,0 +1,69 @@
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Título principal */
+h1 {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Título da pergunta */
+#question {
+    font-size: 1.8em;
+    margin: 20px 0;
+}
+
+/* Estilo das opções */
+button.alternative {
+    background-color: #f8f9fa;
+    border: 2px solid #0073e6;
+    border-radius: 8px;
+    color: #0073e6;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover nas opções */
+button.alternative:hover {
+    background-color: #0073e6;
+    color: white;
+}
+
+/* Estilo do status da resposta */
+#statusAnswer {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #d9534f;
+}
+
+/* Botão de recarregar */
+#reload {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+/* Hover do botão de recarregar */
+#reload:hover {
+    background-color: #218838;
+}
