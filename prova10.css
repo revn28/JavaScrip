@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+header h1 {
+    font-size: 2rem;
+    color: #4a90e2;
+    margin-bottom: 20px;
+    margin: 10px;
+}
+main {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 60px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+label {
+    font-size: 1rem;
+    color: #4a90e2;
+}
+input[type="text"] {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    width: calc(100% - 22px);
+}
+input::placeholder {
+    color: #aaa;
+}
+button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+button:hover {
+    background-color: #357abd;
+}
+.tarefa {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tarefa span {
+    flex-grow: 1;
+    margin-left: 10px;
+    text-align: left;
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+.tarefa.concluida span {
+    text-decoration: line-through;
+    color: rgb(65, 175, 65);
+}
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2); /* Aumenta o tamanho do checkbox */
+    cursor: pointer;
+}
+button.remover {
+    background-color: #e74c3c;
+}
+button.remover:hover {
+    background-color: #c0392b;
+}
+.membro-tarefas {
+    margin-top: 20px;
+}
