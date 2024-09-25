@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#formularioLivros {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#formularioLivros input {
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+}
+
+#formularioLivros button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+}
+
+#listaLivro {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.livro-item {
+    background-color: white;
+    margin: 10px auto; /* Centraliza os itens */
+    padding: 15px; /* Adiciona espaçamento interno */
+    border: 1px solid #ddd; /* Borda cinza */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.2s; /* Transição suave ao passar o mouse */
+}
+.livro-item:hover {
+    transform: scale(1.03);
+}
+
+
+#formularioBusca {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#formularioBusca input {
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+}
+
+#formularioBusca button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
