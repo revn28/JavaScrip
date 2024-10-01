@@ -1,0 +1,108 @@
+/* Definindo estilo básico para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Estilo para o título principal */
+h1 {
+    color: #4CAF50;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o container de login */
+#conteiner1 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Inputs de login e cadastro */
+input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="date"], input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Botões */
+input[type="button"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+/* Link para cadastro */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para a área bancária */
+#area-bancaria {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+/* Títulos e textos na área bancária */
+h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a mensagem de sucesso ou erro */
+#mensagem {
+    margin-top: 20px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Estilo de alerta para erros */
+.alerta {
+    color: #ff0000;
+}
+
+/* Responsividade: Ajustes para telas menores */
+@media (max-width: 768px) {
+    #conteiner1, #area-bancaria {
+        width: 90%;
+    }
+}
