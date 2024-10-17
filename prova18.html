@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à FakeStore</h1>
+        <div id="userActions">
+            <button id="loginButton">Login</button>
+            <button id="registerButton">Registrar</button>
+            <button id="logoutButton" style="display:none;">Logout</button>
+        </div>
+        <p id="welcomeMessage"></p>
+    </header>
+
+    <main>
+        <input type="text" id="searchInput" placeholder="Buscar produtos...">
+        <button id="searchButton">Buscar</button>
+
+        <section id="productsContainer"></section>
+        
+        <div id="carrinho" class="carrinho">
+            <h3>Carrinho de Compras</h3>
+            <div id="carrinhoItems"></div>
+            <p id="total">Total: $0.00</p>
+            <button id="finalizarCompraButton">Finalizar Compra</button>
+        </div>
+    </main>
+
+    <script src="projeto.js"></script>
+</body>
+</html>

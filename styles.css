@@ -1,0 +1,111 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Estilo do contêiner de produtos */
+#productsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilo de cada produto */
+.produto {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px; /* Define a largura dos produtos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo da imagem do produto */
+.produto img {
+    max-width: 100%; /* Limita a largura da imagem ao tamanho do contêiner do produto */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Arredonda os cantos da imagem */
+}
+
+
+/* Estilo do botão do carrinho */
+#carrinho {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo do modal */
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+/* Botões */
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Estilo do carrinho */
+#carrinhoItems {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Estilo do total */
+#total {
+    font-weight: bold;
+    margin-top: 10px;
+}
